@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#b0ddff, #154264);
+    filter: drop-shadow(0 0 10px #008af4) drop-shadow(0 0 30px #000) drop-shadow(0 0 15px #008af4) ;
+    font-family: sans-serif;
+}
+
+.app{
+    width: 90%;
+    background-color: #fff;
+    border-radius: 18px;
+    border: 3px solid #008af4;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.img-container{
+    width: 20%;
+    height: 80%;
+    margin-top: 10px;
+}
+
+.header img{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #b0ddff;
+    filter: (drop-shadow(0 0 15px #31a3fa),  drop-shadow(0 0 2px #008af4));
+}
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map{
+    width: 98%;
+    height: 300px;
+}
+
+.map-form{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[type=text]{
+    width: 80%;
+    height: 70%;
+    border-radius: 16px 0 0 16px;
+    border: none;
+    padding: 5px;
+    background-color: #d4e9f9;
+    color: #000000;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+[type=submit]{
+    width: 10%;
+    height: 70%;
+    border-radius: 0 16px 16px 0;
+    border: none;
+    background-color: #b0ddff;
+    color: #ffffff;
+}
+
+
+/*-----------MODAL----------------*/
+
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-image: linear-gradient(#31a3fa, #fff);
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 18px;
+}
+
+.close {
+    color: #fff;
+    float: right !important;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
